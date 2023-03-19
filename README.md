@@ -69,5 +69,3 @@ Shree Ram Bhusal
 ![screenshot3](pics/screenshot3.png) <br>
 ![screenshot4](pics/screenshot4.png)
 
-
-
