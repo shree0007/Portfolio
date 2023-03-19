@@ -1,0 +1,315 @@
+:root {
+  --color-themeblue: #436A73;
+  --color-themegray: #D2D7D9;
+  --color-themedarkbrown: #261B14;
+
+  --color-white: white;
+  --color-orange: rgb(255, 115, 0);
+  --color-blue: rgb(12, 12, 246);
+
+  --font: "Segoe UI", sans-serif;
+
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--font);
+}
+
+
+
+/* ***Header and nav section*** */
+
+header {
+  background-color: var(--color-themeblue);
+  color: var(--color-themegray);
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg {
+  background: var(--color-themedarkbrown);
+  color: var(--color-themegray);
+
+}
+
+.bg h1 {
+  font-size: 1rem;
+}
+
+.mobile {
+  display: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: var(--color-white);
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/* ***Main section**** */
+
+main {
+  background-color: var(--color-white);
+  margin: 3rem;
+}
+
+
+.i1 {
+  grid-area: i1;
+
+}
+
+.i2 {
+  grid-area: i2;
+
+
+}
+
+.i3 {
+  grid-area: i3;
+
+}
+
+.i4 {
+  grid-area: i4;
+
+}
+
+.i5 {
+  grid-area: i5;
+
+}
+
+.i6 {
+  grid-area: i6;
+
+}
+
+.i7 {
+  grid-area: i7;
+
+}
+
+.i8 {
+  grid-area: i8;
+
+}
+
+.i9 {
+  grid-area: i9;
+
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "i1 i1 i2 i3"
+    "i1 i1 i4 i3"
+    "i5 i6 i6 i3"
+    "i7 i6 i6 i8"
+    "i9 i6 i6 i8";
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 0.5fr 0.5fr 0.5fr;
+
+
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.source {
+  margin-top: 1.5rem;
+  font-size: small;
+}
+
+#images-source {
+  color: var(--color-orange);
+  text-decoration: none;
+
+}
+
+#images-source:hover {
+  background-color: var(--color-themeblue);
+  color: var(--color-white);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* *****footer section***** */
+
+#footer {
+  background-color: var(--color-themedarkbrown);
+  padding: 1rem;
+}
+
+#p1,
+#p3 {
+  padding-left: 10px;
+}
+
+#p-footer {
+  text-align: center;
+  font-size: small;
+  margin: 1rem 0rem;
+  color: var(--color-themegray);
+}
+
+.form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form h3 {
+  color: var(--color-themegray);
+  text-align: center;
+  margin: 1.2rem 0rem 1rem;
+}
+
+.form input {
+  width: 250px;
+  margin: 0.5rem 0.5rem 0.5rem 2.5rem;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  border: none;
+
+}
+
+.form textarea {
+  width: 250px;
+  margin: 0.5rem 0rem 0rem 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.form label {
+  float: left;
+  margin: 0.6rem 5rem 0rem 0rem;
+  font-size: medium;
+  color: var(--color-themegray);
+}
+
+#submit {
+  width: 120px;
+  padding: 0.5rem;
+  margin: 1.5rem 0rem 0rem 15.5rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: none;
+}
+
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: var(--color-white);
+
+}
+
+
+
+@media (max-width:375px) {
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  ul.responsive {
+    display: block;
+    background-image: linear-gradient(to right, var(--color-orange), var(--color-blue));
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    width: 100%;
+    text-align: start;
+
+  }
+
+  ul.responsive li {
+    display: inline;
+    font-size: x-small;
+    padding: 0.3rem;
+
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .gallery {
+    margin-top: 3rem;
+  }
+
+  .form label {
+    font-size: small;
+    margin-right: 1rem;
+  }
+
+  .form input {
+    width: 145px;
+  }
+
+  .form textarea {
+    width: 148px;
+    margin-right: 0.5rem;
+  }
+
+  #submit {
+    width: 90px;
+    font-size: xx-small;
+    margin-left: 8.8rem;
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.4rem;
+    font-size: x-small;
+  }
+
+}
