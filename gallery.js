@@ -17,10 +17,10 @@ const scrollfunction = () => {
     document.documentElement.scrollTop > 60
   ) {
     backButton.style.display = "block";
-    // header.classList.add("bg");
+
   } else {
     backButton.style.display = "none";
-    // header.classList.remove("bg");
+
   }
 };
 
@@ -29,10 +29,10 @@ const scrollfunctionHeader = () => {
     document.body.scrollTop > 5 ||
     document.documentElement.scrollTop > 5
   ) {
-    // backButton.style.display = "block";
+
     header.classList.add("bg");
   } else {
-    // backButton.style.display = "none";
+
     header.classList.remove("bg");
   }
 };

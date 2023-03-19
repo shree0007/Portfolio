@@ -248,9 +248,9 @@ img {
 }
 
 
+/* ***settings for max-width:980px*** */
 
-@media (max-width:375px) {
-
+@media (max-width: 980px) {
   nav ul {
     display: none;
   }
@@ -264,21 +264,30 @@ img {
     background-image: linear-gradient(to right, var(--color-orange), var(--color-blue));
     position: absolute;
     left: 0;
-    top: 4rem;
+    top: 4.5rem;
     width: 100%;
     text-align: start;
-
   }
 
   ul.responsive li {
     display: inline;
-    font-size: x-small;
-    padding: 0.3rem;
+    font-size: x-large;
+    padding: 1rem;
 
   }
 
-  h2 {
-    display: none;
+}
+
+
+/* *** Mobile settings for max-width:414px*** */
+
+@media (max-width:414px) {
+
+
+  ul.responsive li {
+    font-size: x-small;
+    padding: 0.3rem;
+
   }
 
   .gallery {
@@ -291,12 +300,14 @@ img {
   }
 
   .form input {
-    width: 145px;
+    width: 148px;
+    height: 30px;
   }
 
   .form textarea {
     width: 148px;
-    margin-right: 0.5rem;
+    height: 50px;
+    margin-left: 0.7rem;
   }
 
   #submit {
