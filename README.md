@@ -54,7 +54,7 @@ Built with:
 
 ## Link
 
-Live page [here] https://public.bc.fi/s2300095/shree/PORTFOLIO/gallery.html
+Live page [here] https://public.bc.fi/s2300095/shree/PORTFOLIO/
 
 
 ## Author
